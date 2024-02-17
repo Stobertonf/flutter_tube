@@ -1,16 +1,29 @@
 # flutter_tube
 
-A new Flutter project.
+## Seja bem vindo
 
-## Getting Started
+👋 Olá, seja bem vindo.
 
-This project is a starting point for a Flutter application.
+## Curso
 
-A few resources to get you started if this is your first Flutter project:
+💻 Aplicativo do Curso
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Criação de Apps Android/iOS/Web com Flutter - 5 cursos em 1, do professor Daniel Ciolfi na plataforma Udemy.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Escopo
+
+📚 Neste projeto, apesar de ser simples, irei revisar conceitos de BloC Pattern. Aplicativo que possibilita adicionar vídeos como favoritos, para vermos depois.
+Além disso, é posssível assistir os vídeos sempre que desejar.
+
+## Foco
+
+😊 O curso é focado em desenvolver um App semelhante ao Youtube, possibilitando favoritar e adicionar vídeos.
+
+## Prazo
+
+⚡ Este projeto foi iniciado no dia 17/02/2024.
+
+## Imagens
+
+Neste momento, eu não possuo imagens do projeto. No entanto, em breve as mesmas vão ser disponibilizadas.
+
