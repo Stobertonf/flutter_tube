@@ -1,11 +1,12 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:rxdart/rxdart.dart';
+import 'package:flutter/foundation.dart';
 import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter_tube/models/video_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-abstract class FavoriteBloc implements BlocBase {
+class FavoriteBloc with ChangeNotifier implements BlocBase {
   Map<String, Video> _favorites = {};
   Stream<Map<String, Video>> get outFav => _favController.stream;
   final _favController = BehaviorSubject<Map<String, Video>>.seeded({});
