@@ -2,8 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter_tube/models/video_model.dart';
 
-//TODO: Colocar a chave da API.
-const API_KEY = "";
+const String API_KEY = "SUA-API-KEY";
 
 class Api {
   late String _search;
@@ -12,17 +11,19 @@ class Api {
   Future<List<Video>> search(String search) async {
     _search = search;
 
-    http.Response response = await http.get(
-        "https://www.googleapis.com/youtube/v3/search?part=snippet&q=$search&type=video&key=$API_KEY&maxResults=10"
-            as Uri);
+    Uri url = Uri.parse(
+        "https://www.googleapis.com/youtube/v3/search?part=snippet&q=$search&type=video&key=$API_KEY&maxResults=10");
+
+    http.Response response = await http.get(url);
 
     return decode(response);
   }
 
   Future<List<Video>> nextPage() async {
-    http.Response response = await http.get(
-        "https://www.googleapis.com/youtube/v3/search?part=snippet&q=$_search&type=video&key=$API_KEY&maxResults=10&pageToken=$_nextToken"
-            as Uri);
+    Uri url = Uri.parse(
+        "https://www.googleapis.com/youtube/v3/search?part=snippet&q=$_search&type=video&key=$API_KEY&maxResults=10&pageToken=$_nextToken");
+
+    http.Response response = await http.get(url);
 
     return decode(response);
   }
